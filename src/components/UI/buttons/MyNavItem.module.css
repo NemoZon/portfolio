@@ -1,0 +1,18 @@
+.nav__item{
+    transition-property: all;
+    transition-duration: 200ms;
+    background-color: transparent;
+    border: none;
+    text-decoration: none;
+    font-family: 'Bebas Neue', cursive;
+    color: white;
+    margin: 0 50px 0 50px;
+    font-size: 50px;
+}
+
+.nav__item:hover {
+    transform: translate(-5px, -5px);
+    text-shadow: 3px 3px #888888, 10px 10px #000000;
+    text-decoration: none;
+    color: white;
+}
