@@ -4,3 +4,8 @@
 ```
 npm start
 ```
+
+## Watch sass
+```
+gulp
+```

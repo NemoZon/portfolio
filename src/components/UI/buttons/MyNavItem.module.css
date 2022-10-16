@@ -16,3 +16,6 @@
     text-decoration: none;
     color: white;
 }
+.nav__item:active {
+    text-shadow: 3px 3px #e44545, 10px 10px #000000;
+}
