@@ -1,10 +1,10 @@
 import React from 'react';
-import classes from './MyNavItem.module.css';
+import classes from './MyNavButton.module.css';
 
-const MyButton = (props) => {
+const MyButton = ({children, ...props}) => {
     return (
         <button {...props} className={classes.nav__item}>
-            {props.children}
+            {children}
         </button>
     );
 };
