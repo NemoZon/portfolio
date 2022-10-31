@@ -6,9 +6,10 @@ import IconsList from './components/IconsList';
 function App() {
 
   const [navButtons, setNavButtons] = useState([
-    {id: 1, title: 'About Me'},
-    {id: 2, title: 'Projects'}
+    {id: 1, title: 'About Me', state: 'menu'},
+    {id: 2, title: 'Projects', state: 'menu'}
   ]);
+
 
   const [icons, setIcons] = useState([
     {
@@ -48,10 +49,14 @@ function App() {
       alt: 'whatsapp'
     }
   ]);
-
+  function changeState(e) {
+    const btns = navButtons.map((elem)=>{return elem.title===e.target.textContent?{...elem, 'state': 'active'}: {...elem, 'state': 'disabled'}});
+    setNavButtons(btns);
+    console.log(navButtons);
+  }
   return (
     <div className="App">
-      <NavButtonsList buttons={navButtons}/>
+      <NavButtonsList changeState={changeState} buttons={navButtons}/>
       <IconsList icons={icons}/>
     </div>
   );

@@ -19,3 +19,18 @@
 .nav__item:active {
     text-shadow: 3px 3px #e44545, 10px 10px #000000;
 }
+
+.nav__item_active {
+    color: red;
+    font-size: 100px;
+}
+
+.nav__item_disabled{
+    color: rgb(122, 27, 185);
+    font-size: 50px;
+}
+
+.nav__item_menu{
+    color: rgb(19, 212, 84);
+    font-size: 50px;
+}
