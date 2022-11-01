@@ -21,16 +21,22 @@
 }
 
 .nav__item_active {
-    color: red;
-    font-size: 100px;
+    display: flex;
+    color: white;
+    transform: translate(-100%, 0px);
+    text-shadow: 3px 3px #888888, 10px 10px #000000;
+    font-size: 8vw;
+}
+.nav__item_active:hover {
+    transform: translate(-100%, 0px);
+    text-decoration: none;
 }
 
 .nav__item_disabled{
-    color: rgb(122, 27, 185);
-    font-size: 50px;
+    display: none;
 }
 
 .nav__item_menu{
-    color: rgb(19, 212, 84);
-    font-size: 50px;
+    display: inline-block;
+    
 }
