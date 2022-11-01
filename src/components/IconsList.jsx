@@ -5,37 +5,37 @@ const IconsList = (props) => {
     const [icons, setIcons] = useState([
         {
             id: 1,
-            href: '#', 
+            href: 'https://github.com/NemoZon', 
             src: './img/icons/icons8-github.svg', 
             alt: 'github'
         },
         {
             id: 2,
-            href: '#', 
+            href: 'https://mail.google.com/mail/u/0/#inbox?compose=CllgCHrjDvXnHdjdLPwTQnBKpfmxRNhnFjtgNFlLFXtVpjnNwrWJfWKzXTRfJdNMWjcvmnlTKPL', 
             src: './img/icons/icons8-google-plus.svg', 
             alt: 'google'
         },
         {
             id: 3,
-            href: '#', 
+            href: 'https://www.instagram.com/_gleb_bush_/', 
             src: './img/icons/icons8-instagram.svg', 
             alt: 'instagram'
         },
         {
             id: 4,
-            href: '#', 
+            href: 'https://www.linkedin.com/in/gleb-bushukin-b3a35024b/', 
             src: './img/icons/icons8-linkedin.svg', 
             alt: 'linkedin'
         },
         {
             id: 5,
-            href: '#', 
+            href: 'https://vk.com/lllllllllllllllllillli', 
             src: './img/icons/icons8-vk-com.svg', 
             alt: 'vk'
         },
         {
             id: 6,
-            href: '#', 
+            href: 'wa.me/79373644330', 
             src: './img/icons/icons8-whatsapp.svg', 
             alt: 'whatsapp'
         }

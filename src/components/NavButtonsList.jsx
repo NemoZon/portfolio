@@ -11,8 +11,17 @@ const NavList = (props) => {
             infoMenu: {
                 id: 1, 
                 active: false, 
-                img: null,
+                img: {
+                    src: "https://images.unsplash.com/photo-1517960413843-0aee8e2b3285?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8&w=1000&q=80",
+                    alt: "It's Me"
+                },
+                desc: "J'ai réalisé de nombreux projets de développement front et back-end, et j'ai également créé un bot pour le réseau 'Telegram'. Sérieux dans le travail, je me forme constamment aux langages sur le web.Je souhaite acquérir ma première expérience en entreprise dans la programmation lors d'un stage du 11 avril au 2 juin 2023.",
                 title: "Gleb BUSHUKIN", 
+                info:{
+                    tel: "+33 6 28 34 46 21",
+                    address: "17 Rue du Colonel Fabie, 51100 Reims",
+                    email: "gleb.bushukin@gmail.com"
+                },
                 links: null
             }},
         {
@@ -23,11 +32,29 @@ const NavList = (props) => {
                 id: 2, 
                 active: false, 
                 img: null,
-                title: "My Projects", 
+                desc: null,
+                title: null, 
+                info: null,
                 links: [
                     {
+                        href: "https://nemozon.github.io/projects/manicure/",
+                        text: "Manicure (fr)",
+                        img: "./img/manicure.png"
+                    },
+                    {
+                        href: "https://nemozon.github.io/projects/puls/",
+                        text: "Puls (rus)",
+                        img: "./img/puls.png"
+                    },
+                    {
                         href: "https://nemozon.github.io/projects/uber/",
-                        text: "Uber Russia"
+                        text: "Uber (rus)",
+                        img: "./img/uber.png"
+                    },
+                    {
+                        href: "https://nemozon.github.io/projects/minigame/",
+                        text: "Mini Game via Js (rus)",
+                        img: "./img/minigame.png"
                     }
                 ]
             }}
@@ -53,7 +80,9 @@ const NavList = (props) => {
                 <MyInfoMenu 
                 key={elem.infoMenu.id} 
                 active={elem.infoMenu.active} 
-                title={elem.infoMenu.title} 
+                title={elem.infoMenu.title}
+                desc={elem.infoMenu.desc}
+                info={elem.infoMenu.info}
                 img={elem.infoMenu.img} 
                 links={elem.infoMenu.links}>
                 </MyInfoMenu>)}
